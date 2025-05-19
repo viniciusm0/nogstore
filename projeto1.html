@@ -9,60 +9,78 @@
     <title>Nog Store - Projeto 1</title>
 </head>
 <body>
+    <!--BACKGROUND VIDEO-->
+    <div class="z-n1 position-fixed">
+        <video autoplay muted loop playinline>
+            <source src="assets/video/video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!--BACKGROUND VIDEO-->
+    <!--OVERLAY-->
+    <div class="position-fixed opacity-75 bg-black z-0" style="width: 100%; height: 100%;"></div>
+    <!--OVERLAY-->
     <header style="height: 56px;">
         <!--Navbar-->
         <nav class="navbar fixed-top navbar-expand-lg bg-dark bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
+                <div class="container-fluid d-flex d-lg-none flex-nowrap">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="container d-flex d-lg-none justify-content-center" id="logonav">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/icon.jpg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+                        </a>
+                    </div>
                 <!--Menu hamburguer-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--Menu hamburguer-->
+                </div>     
                 <!--Itens da navbar-->
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <!--Itens da esquerda-->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <!--Dropdown das sociais-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Sociais
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="https://www.nogediits.myportfolio.com">
-                                        <img src="assets/img/icon.jpg" alt="Logo" width="20" height="20" class="d-inline-block mx-1 align-text-top">
-                                        Portfolio
-                                    </a>
-                                </li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li>
-                                    <a class="dropdown-item" href="https://www.youtube.com/@nogediits">
-                                        <img src="assets/img/youtube.png" alt="Logo" width="20" height="20" class="d-inline-block mx-1 align-text-top">
-                                        Youtube
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="https://www.instagram.com/nogediits/">
-                                        <img src="assets/img/instagram.webp" alt="Logo" width="20" height="20" class="d-inline-block mx-1 align-text-top">
-                                        Instagram
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="https://x.com/Nogediits">
-                                        <img src="assets/img/X.png" alt="Logo" width="20" height="20" class="d-inline-block mx-1 align-text-top">
-                                        Twitter
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!--Dropdown das sociais-->
-                    </ul>
-                    <!--Itens da esquerda-->
+                <div class="collapse navbar-collapse flex-wrap flex-lg-nowrap" id="navbarTogglerDemo02">
+                    <div class="d-flex flex-wrap">
+                        <!--Itens da esquerda-->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <!--Dropdown das sociais-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sociais
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="https://www.nogediits.myportfolio.com">
+                                            <img src="assets/img/icon.jpg" alt="Logo" width="20" height="20" class="d-inline-block mx-1 align-text-top">
+                                            Portfolio
+                                        </a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://www.youtube.com/@nogediits">
+                                            <img src="assets/img/youtube.png" alt="Logo" width="20" height="20" class="d-inline-block mx-1 align-text-top">
+                                            Youtube
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://www.instagram.com/nogediits/">
+                                            <img src="assets/img/instagram.webp" alt="Logo" width="20" height="20" class="d-inline-block mx-1 align-text-top">
+                                            Instagram
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://x.com/Nogediits">
+                                            <img src="assets/img/X.png" alt="Logo" width="20" height="20" class="d-inline-block mx-1 align-text-top">
+                                            Twitter
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--Dropdown das sociais-->
+                        </ul>
+                        <!--Itens da esquerda-->
+                    </div>  
                     <!-- LOGO DO MEIO -->
-                    <div class="container d-flex justify-content-center" id="logonav">
+                    <div class="container d-none d-lg-flex justify-content-center" id="logonav">
                         <a class="navbar-brand" href="index.html">
                             <img src="assets/img/icon.jpg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
                         </a>
@@ -70,8 +88,8 @@
                     <!-- LOGO DO MEIO -->
                     <!--Itens da direita-->
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2 text-center" type="search" placeholder="Procure um projeto" aria-label="Search"/>
-                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                        <input class="form-control border border-warning me-2 text-center" type="search" placeholder="Procure um projeto" aria-label="Search"/>
+                        <button class="btn btn-outline-warning" type="submit">Pesquisar</button>
                     </form>
                     <!--Itens da direita-->
                 </div>
@@ -81,17 +99,17 @@
         <!--Navbar-->
     </header>
     <main>
-        <div class="container align-middle">
-            <div class="hstack gap-3">
+        <div class="container z-1 position-relative align-self-center d-flex" style="height: 100vh;">
+            <div class="hstack bg-white object-fit-cover rounded border border-black gap-3">
                 <div class="p-2"><img src="assets/img/paisagem.webp" class="rounded object-fit-cover" height="400" alt="projetoimg"></div>
                 <div class="vr"></div>
                 <div class="p-2">
-                    <h1 class="display-2">Projeto 1</h1>
-                    <p class="h3">R$ 0,00</p>
+                    <h1 class="display-2 text-black">Projeto 1</h1>
+                    <p class="h3 text-black">R$ 0,00</p>
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <a href="https://www.google.com" class="btn btn-warning">Comprar agora</a>
                     </div>
-                    <p class="h5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptas fugit quisquam accusantium sunt provident ducimus aliquam perferendis praesentium ab nihil commodi, odio incidunt consectetur doloribus dignissimos repellat distinctio. Veritatis!</p>
+                    <p class="h5 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptas fugit quisquam accusantium sunt provident ducimus aliquam perferendis praesentium ab nihil commodi, odio incidunt consectetur doloribus dignissimos repellat distinctio. Veritatis!</p>
                 </div>
             </div>
         </div>
