@@ -25,18 +25,21 @@
             <!--Navbar-->
             <nav class="navbar fixed-top navbar-expand-lg bg-dark bg-body-tertiary" data-bs-theme="dark">
                 <div class="container-fluid">
+                    <div class="container-fluid d-flex d-lg-none flex-nowrap">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="container d-md-flex d-lg-none justify-content-center" id="logonav">
-                        <a class="navbar-brand" href="#">
-                            <img src="assets/img/icon.jpg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
-                        </a>
-                    </div>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="container d-flex d-lg-none justify-content-center" id="logonav">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/img/icon.jpg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+                            </a>
+                        </div>
                     <!--Menu hamburguer-->
+                    </div>     
                     <!--Itens da navbar-->
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <!--Itens da esquerda-->
+                    <div class="collapse navbar-collapse flex-wrap flex-lg-nowrap" id="navbarTogglerDemo02">
+                        <div class="d-flex flex-wrap">
+                            <!--Itens da esquerda-->
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -77,6 +80,8 @@
                             <!--Dropdown das sociais-->
                         </ul>
                         <!--Itens da esquerda-->
+                        </div>
+                        
                         <!-- LOGO DO MEIO -->
                         <div class="container d-none d-lg-flex justify-content-center" id="logonav">
                             <a class="navbar-brand" href="#">
@@ -97,7 +102,101 @@
             <!--Navbar-->
         </header>
         <main>
-            <div class="overflow-x-hidden z-1 position-relative">
+            <section>
+                <div class="overflow-x-hidden z-1 position-relative d-block d-lg-none">
+                    <!--LINHA CIMA-->
+                    <div class="col-auto mt-4 bg-warning d-flex overflow-y-hidden z-1" style="height: calc(100vh - 76px);">
+                        <div class="container mt-4">
+                            <div class="row text-center">
+                                <h1 class="display-1 fadein-transformX">Nog Ediits</h1>
+                                <p class="h1 fadein-transformX" style="animation-duration: 3.5s;">Meus projetinhos</p>
+                            </div>
+                            <div class="row fadein-transformY">
+                                <img src="assets/img/vertical.jpg" alt="teste" height="698">
+                            </div>
+                        </div>
+                    </div>
+                    <!--LINHA CIMA-->  
+                    <div class="container d-flex justify-content-center">
+                        <!--LINHA BAIXO-->
+                        <div class="col-md-8 overflow-y-scroll mt-5" style="max-height: calc(100vh - 100px)">
+                            <!-- Cards -->
+                            <div class="container text-center">
+                                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 justify-content-center">
+                                    <div class="col mb-3">
+                                        <div class="card">
+                                            <img src="assets/img/paisagem2.webp" class="card-img-top object-fit-cover rounded" height="210" alt="teste">
+                                            <div class="card-body">
+                                                <h2 class="mb-1 card-title">Projeto1</h2>
+                                                <h5 class="card-body">R$ 0,00</h5>
+                                                <a href="projeto1.html" class="btn btn-warning">Saber mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="card">
+                                            <img src="assets/img/paisagem2.webp" class="card-img-top object-fit-cover rounded" height="210" alt="teste">
+                                            <div class="card-body">
+                                                <h2 class="mb-1 card-title">Projeto2</h2>
+                                                <h5 class="card-body">R$ 0,00</h5>
+                                                <a href="#" class="btn btn-warning">Saber mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 justify-content-center">
+                                    <div class="col mb-3">
+                                        <div class="card">
+                                            <img src="assets/img/paisagem2.webp" class="card-img-top object-fit-cover rounded" height="210" alt="teste">
+                                            <div class="card-body">
+                                                <h2 class="mb-1 card-title">Projeto1</h2>
+                                                <h5 class="card-body">R$ 0,00</h5>
+                                                <a href="projeto1.html" class="btn btn-warning">Saber mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="card">
+                                            <img src="assets/img/paisagem2.webp" class="card-img-top object-fit-cover rounded" height="210" alt="teste">
+                                            <div class="card-body">
+                                                <h2 class="mb-1 card-title">Projeto2</h2>
+                                                <h5 class="card-body">R$ 0,00</h5>
+                                                <a href="#" class="btn btn-warning">Saber mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 justify-content-center">
+                                    <div class="col mb-3">
+                                        <div class="card">
+                                            <img src="assets/img/paisagem2.webp" class="card-img-top object-fit-cover rounded" height="210" alt="teste">
+                                            <div class="card-body">
+                                                <h2 class="mb-1 card-title">Projeto1</h2>
+                                                <h5 class="card-body">R$ 0,00</h5>
+                                                <a href="projeto1.html" class="btn btn-warning">Saber mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="card">
+                                            <img src="assets/img/paisagem2.webp" class="card-img-top object-fit-cover rounded" height="210" alt="teste">
+                                            <div class="card-body">
+                                                <h2 class="mb-1 card-title">Projeto2</h2>
+                                                <h5 class="card-body">R$ 0,00</h5>
+                                                <a href="#" class="btn btn-warning">Saber mais</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Cards -->
+                        </div>
+                        <!--LINHA BAIXO-->
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="overflow-x-hidden z-1 position-relative d-none d-lg-block">
                 <div class="row">
                     <!--COLUNA ESQUERDA-->
                     <div class="col-md-8 overflow-y-scroll mt-5" style="max-height: calc(100vh - 100px)">
@@ -187,7 +286,7 @@
                     </div>
                     <!--COLUNA DIREITA-->
                 </div>
-                    
+            </section>   
         </main>
         <footer class="my-5 z-1 position-relative">
             <!--Collapse do footer-->
