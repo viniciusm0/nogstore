@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="assets/img/icon.jpg">
+        <link rel="stylesheet" href="assets/css/animations.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous" defer></script>
         <title>Nog Store</title>
@@ -24,10 +25,14 @@
             <!--Navbar-->
             <nav class="navbar fixed-top navbar-expand-lg bg-dark bg-body-tertiary" data-bs-theme="dark">
                 <div class="container-fluid">
-                    <!--Menu hamburguer-->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <div class="container d-md-flex d-lg-none justify-content-center" id="logonav">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/img/icon.jpg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+                        </a>
+                    </div>
                     <!--Menu hamburguer-->
                     <!--Itens da navbar-->
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -73,7 +78,7 @@
                         </ul>
                         <!--Itens da esquerda-->
                         <!-- LOGO DO MEIO -->
-                        <div class="container d-flex justify-content-center" id="logonav">
+                        <div class="container d-none d-lg-flex justify-content-center" id="logonav">
                             <a class="navbar-brand" href="#">
                                 <img src="assets/img/icon.jpg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
                             </a>
@@ -99,7 +104,7 @@
                         <!-- Cards -->
                         <div class="container text-center">
                             <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 justify-content-center">
-                                <div class="col mb-3">
+                                <div class="col mb-3 fadein-transformY" style="animation-duration: 1s;">
                                     <div class="card">
                                         <img src="assets/img/paisagem2.webp" class="card-img-top object-fit-cover rounded" height="210" alt="teste">
                                         <div class="card-body">
@@ -109,7 +114,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col mb-3">
+                                <div class="col mb-3 fadein-transformY" style="animation-duration: 1.5s;">
                                     <div class="card">
                                         <img src="assets/img/paisagem2.webp" class="card-img-top object-fit-cover rounded" height="210" alt="teste">
                                         <div class="card-body">
@@ -121,7 +126,7 @@
                                 </div>
                             </div>
                             <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 justify-content-center">
-                                <div class="col mb-3">
+                                <div class="col mb-3 fadein-transformY" style="animation-duration: 2s;">
                                     <div class="card">
                                         <img src="assets/img/paisagem2.webp" class="card-img-top object-fit-cover rounded" height="210" alt="teste">
                                         <div class="card-body">
@@ -131,7 +136,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col mb-3">
+                                <div class="col mb-3 fadein-transformY" style="animation-duration: 2.5s;">
                                     <div class="card">
                                         <img src="assets/img/paisagem2.webp" class="card-img-top object-fit-cover rounded" height="210" alt="teste">
                                         <div class="card-body">
@@ -143,7 +148,7 @@
                                 </div>
                             </div>
                             <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 justify-content-center">
-                                <div class="col mb-3">
+                                <div class="col mb-3 fadein-transformY" style="animation-duration: 3s;">
                                     <div class="card">
                                         <img src="assets/img/paisagem2.webp" class="card-img-top object-fit-cover rounded" height="210" alt="teste">
                                         <div class="card-body">
@@ -153,7 +158,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col mb-3">
+                                <div class="col mb-3 fadein-transformY" style="animation-duration: 3.5s;">
                                     <div class="card">
                                         <img src="assets/img/paisagem2.webp" class="card-img-top object-fit-cover rounded" height="210" alt="teste">
                                         <div class="card-body">
@@ -172,11 +177,11 @@
                     <div class="col-6 col-md-4 mt-4 bg-warning d-flex overflow-y-hidden z-1" style="height: calc(100vh - 76px);">
                         <div class="container">
                             <div class="row">
-                                <h1 class="display-1">Nog Ediits</h1>
-                                <p class="h1">Meus projetinhos</p>
+                                <h1 class="display-1 fadein-transformX">Nog Ediits</h1>
+                                <p class="h1 fadein-transformX" style="animation-duration: 3.5s;">Meus projetinhos</p>
                             </div>
-                            <div class="row">
-                                <img src="assets/img/vertical.jpg" alt="teste">
+                            <div class="row fadein-transformY">
+                                <img src="assets/img/vertical.jpg" alt="teste" height="698">
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,60 @@
+.fade-in {
+    animation: fadein 1.5s;
+}
+
+.fade-out {
+    animation: fadeout 1.5s;
+}
+
+.fadein-transformY {
+    animation: 
+        transformY 1.5s,
+        fadein 1.5s;
+}
+
+.fadein-transformX{
+    animation: transformX 1.5s,
+    fadein 2.5s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes transformY {
+    0% {
+        transform: translateY(500px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+    
+}
+
+@keyframes transformX {
+    0% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.25;
+    }
+}
