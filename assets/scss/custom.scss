@@ -1,5 +1,21 @@
 $warning: #FF9000;
 
+@font-face {
+    font-family: 'Coolvetica-Hv-Comp';
+    src: url('../fonts/Coolvetica-hv-comp.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Coolvetica-Regular';
+    src: url(../fonts/Coolvetica-regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 .bg-warning {
     background-color: $warning !important;
 }
@@ -7,4 +23,14 @@ $warning: #FF9000;
 .btn-warning {
     background-color: $warning !important;
     border-bottom-color: $warning !important;
+}
+
+.avatar-text1 {
+    font-family: 'Coolvetica-Hv-Comp', sans-serif;
+    font-size: 120px;
+}
+
+.avatar-text2 {
+    font-family: 'Coolvetica-Regular', sans-serif;
+    font-size: 60px;
 }
