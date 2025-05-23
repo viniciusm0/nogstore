@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: "Coolvetica-Regular";
-  src: url(../fonts/Coolvetica-regular.otf) format("opentype");
+  src: url("../fonts/Coolvetica-regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }

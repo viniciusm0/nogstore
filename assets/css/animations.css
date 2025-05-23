@@ -12,7 +12,7 @@
         fadein 1.5s;
 }
 
-.fadein-transformX{
+.fadein-transformX {
     animation: transformX 1.5s,
     fadein 2.5s;
 }

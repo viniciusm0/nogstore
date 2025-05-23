@@ -1,4 +1,5 @@
 $warning: #FF9000;
+$warning-hover: #cf7500;
 
 @font-face {
     font-family: 'Coolvetica-Hv-Comp';
@@ -9,7 +10,7 @@ $warning: #FF9000;
 
 @font-face {
     font-family: 'Coolvetica-Regular';
-    src: url(../fonts/Coolvetica-regular.otf) format('opentype');
+    src: url('../fonts/Coolvetica-regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
