@@ -1,5 +1,6 @@
 $warning: #FF9000;
 $warning-hover: #cf7500;
+$tertiary: #0E0E0E;
 
 @font-face {
     font-family: 'Coolvetica-Hv-Comp';
@@ -15,7 +16,30 @@ $warning-hover: #cf7500;
     font-style: normal;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
 
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+
+.card-title {
+    font-family: 'Coolvetica-Regular', sans-serif !important;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.bg-tertiary {
+    background-color: $tertiary !important;
+}
 
 .bg-warning {
     background-color: $warning !important;
@@ -28,10 +52,10 @@ $warning-hover: #cf7500;
 
 .avatar-text1 {
     font-family: 'Coolvetica-Hv-Comp', sans-serif;
-    font-size: 120px;
+    font-size: 150px;
 }
 
 .avatar-text2 {
     font-family: 'Coolvetica-Regular', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
 }
