@@ -2,9 +2,6 @@ const searchInput = document.getElementById('search');
 
 const classesAnimadas = document.querySelectorAll('.fadein-transformY');
 
-const video = document.getElementById('preview');
-video.volume = 0.01;
-
 searchInput.addEventListener('input', (event) => {
   const value = formatString(event.target.value);
   const items = document.querySelectorAll('.item');
